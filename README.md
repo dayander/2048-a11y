@@ -1,45 +1,16 @@
-# 2048 - Implemented with React and Redux
+# 2048- a11y
 
-* [Setup](#setup)
-* [Usage](#usage)
-  * [start](#start)
-  * [debug](#debug)
-  * [lint](#lint)
-  * [build](#build)
+Orignal fork from https://github.com/dvalchanov/react-redux-2048
 
-If you want to play with it, you can check the [DEMO](http://dvalchanov.github.io/react-redux-2048/)
+Updated and made accessible at Teach Access Silicon Valley Study Away 2019
+
 
 ## Setup
 
 ```
-git clone git@github.com:dvalchanov/react-redux-2048.git
-cd react-redux-2048
 npm install
+npm start
 ```
 
 
-## Usage
 
-### `start`
-Start the development server with hot reload:
-```
-make start
-```
-
-### `debug`
-Start the development server in DEBUG mode, with the React dev tools enabled:
-```
-make debug
-```
-
-### `lint`
-Lint the code to check for any errors:
-```
-make lint
-```
-
-### `build`
-Build a production ready version of the code:
-```
-make build
-```
