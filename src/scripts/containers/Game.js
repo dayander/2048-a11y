@@ -74,10 +74,13 @@ export default class Game extends Component {
       <main>
         <div id="score">
           {resultView}
-          <h3>Score: {score}</h3>
+          <h1>2048 - A11y</h1>
+          <h2>Score: {score}</h2>
         </div>
         <button onClick={this._handleNewGame}>New Game</button>
         <button onClick={this._handleSaveGame}>Save Game</button>
+          //what should we do about labeling this?
+          //how to do we notify of a new game or do we not need to?
         <Board key="1" handleNewGame={this._handleNewGame} />
       </main>
     );
