@@ -1,21 +1,13 @@
-# 2048- a11y
+# 2048
 
-Orignal fork from https://github.com/dvalchanov/react-redux-2048
+JavaScript 实现的 2048 网页游戏
 
-Updated and made accessible at Teach Access Silicon Valley Study Away 2019
+逻辑规则参考已有游戏，实现上没有参考源码。样式参考已有游戏。
 
-## Things to work on:
--color pallete and textures. color values are in /src/styles/_variables.scss
-- making the game play screen reader accessible
+<https://github.com/gabrielecirulli/2048>
 
+## 示例
 
+<http://luobotang.github.io/2048/app/>
 
-## Setup
-
-```
-npm install
-npm start
-```
-
-
-
+![](2048.png)

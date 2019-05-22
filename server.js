@@ -1,24 +1,10 @@
-var webpack = require("webpack");
-var WebpackDevServer = require("webpack-dev-server");
-var config = require("./webpack.config.hot");
+var path = require('path')
+var express = require('express')
 
-var compiler = webpack(config);
+var app = express()
 
-// In a separate file
-var host = config.host || "localhost";
-var port = config.port || 3000;
+app.use(express.static(path.join(__dirname, 'app')))
 
-var server = new WebpackDevServer(compiler, {
-  publicPath: config.output.publicPath,
-  hot: true,
-  inline: true,
-  watch: true,
-  sourceMap: true,
-  stats: {colors: true},
-  historyApiFallback: true
-});
+app.listen('8080')
 
-server.listen(port, host, function(err) {
-  if (err) console.log(err);
-  console.log("Listening at " + host + ":" + port);
-});
+console.log('started on 8080...')
